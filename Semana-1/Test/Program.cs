@@ -18,3 +18,7 @@ System.Console.WriteLine(bankAccount.GetBalance());
 bankAccount.Retirar(140);
 System.Console.WriteLine(bankAccount.GetBalance());
 
+// Intento retirar 20 unidades (no deberia dejarme porque no hay saldo)
+bankAccount.Retirar(20);
+System.Console.WriteLine(bankAccount.GetBalance());
+// Fin Encapsulation

@@ -21,4 +21,22 @@ System.Console.WriteLine(bankAccount.GetBalance());
 // Intento retirar 20 unidades (no deberia dejarme porque no hay saldo)
 bankAccount.Retirar(20);
 System.Console.WriteLine(bankAccount.GetBalance());
-// Fin Encapsulation
+
+
+// Abstraccion
+// Reduce la complejidad escondiendo detalles innecesarios para el usuario
+
+// Por ejemplo pasar de esto:
+// using Test.src.PrincipiosPOO.Abstraccion;
+
+// ServicioEmail servicioEmail = new ServicioEmail();
+// ServicioEmail.Conectar();
+// ServicioEmail.Autentificar();
+// ServicioEmail.EnviarMail();
+// ServicioEmail.Desconectar();
+
+// A esto:
+// using Test.src.PrincipiosPOO.Abstraccion;
+
+// ServicioEmail servicioEmail = new ServicioEmail();
+// ServicioEmail.EnviarMail(); // Guardando todo el proceso interno dentro de EnviarEmail()

@@ -1,7 +1,9 @@
-﻿// Encapsulation
+﻿//***/ Encapsulation
 using Test.src.PrincipiosPOO.Encapsulation;
+using Test.src.PrincipiosPOO.Herencia;
 
-// Mala encapsulacion:
+
+//*** Mala encapsulacion:
 // BadBankAccount badAccount = new BadBankAccount();
 // badAccount.balance = 100;
 // System.Console.WriteLine(badAccount.balance);
@@ -23,7 +25,7 @@ using Test.src.PrincipiosPOO.Encapsulation;
 // System.Console.WriteLine(bankAccount.GetBalance());
 
 
-// Abstraccion
+//***Abstraccion***///
 // Reduce la complejidad escondiendo detalles innecesarios para el usuario
 
 // Por ejemplo pasar de esto:
@@ -41,16 +43,40 @@ using Test.src.PrincipiosPOO.Encapsulation;
 // ServicioEmail servicioEmail = new ServicioEmail();
 // ServicioEmail.EnviarMail(); // Guardando todo el proceso interno dentro de EnviarEmail()
 
-// Herencia
+//*** Herencia ***//
+// using Test.src.PrincipiosPOO.Herencia;
 
-using Test.src.PrincipiosPOO.Herencia;
+// var auto = new Auto();
 
-var auto = new Auto();
+// // Compartido
+// auto.Marca = "Ford";
+// auto.Arrancar();
+// auto.Apagar();
 
-// Compartido
-auto.Marca = "Ford";
-auto.Arrancar();
-auto.Apagar();
+// // Unico
+// auto.NumeroDePuertas = 4;
 
-// Unico
-auto.NumeroDePuertas = 4;
+
+//*** Polymorfismo ***//
+// El polymorfismo es la habilidad que tiene un objeto para tener varias formas
+using Test.src.PrincipiosPOO.Polymorfismo;
+//List<object> vehiculos = [];
+List<Vehiculo> vehiculos = [];
+vehiculos.Add(new Auto { Marca = "Ford", Modelo = "Modelo1", Anio = 2025, NumeroDePuertas = 4 });
+vehiculos.Add(new Motocicleta { Marca = "Motito", Modelo = "ModeloGod", Anio = 2025 });
+
+// Inspeccion de vehiculo
+foreach (var vehiculo in vehiculos)
+{
+    // if (vehiculo is Auto)
+    // {
+    //     var auto = (Auto)vehiculo;
+    //     auto.Arrancar();
+    // }
+    // else if (vehiculo is Motocicleta)
+    // {
+    //     var motocicleta = (Motocicleta)vehiculo;
+    //     motocicleta.Arrancar();
+    // }
+    vehiculo.Arrancar();
+}

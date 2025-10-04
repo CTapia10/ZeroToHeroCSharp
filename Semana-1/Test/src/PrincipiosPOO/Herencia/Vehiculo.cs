@@ -8,11 +8,11 @@ namespace Test.src.PrincipiosPOO.Herencia
 
         public int Anio { get; set; }
         
-        public void Arrancar()
+        public virtual void Arrancar()
         {
             Console.WriteLine("El vehiculo se esta encendiendo...");
         }
-        public void Apagar()
+        public virtual void Apagar()
         {
             Console.WriteLine("El vehiculo se esta apagando...");
         }

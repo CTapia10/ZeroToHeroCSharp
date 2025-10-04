@@ -6,21 +6,21 @@ using Test.src.PrincipiosPOO.Encapsulation;
 // badAccount.balance = 100;
 // System.Console.WriteLine(badAccount.balance);
 
-// Creo el objeto cuenta bancaria con un monto de 100 inicial
-BankAccount bankAccount = new BankAccount(100);
-System.Console.WriteLine(bankAccount.GetBalance());
+// // Creo el objeto cuenta bancaria con un monto de 100 inicial
+// BankAccount bankAccount = new BankAccount(100);
+// System.Console.WriteLine(bankAccount.GetBalance());
 
-// Deposito 50 unidades
-bankAccount.Depositar(50);
-System.Console.WriteLine(bankAccount.GetBalance());
+// // Deposito 50 unidades
+// bankAccount.Depositar(50);
+// System.Console.WriteLine(bankAccount.GetBalance());
 
-// Retiro 140 unidades
-bankAccount.Retirar(140);
-System.Console.WriteLine(bankAccount.GetBalance());
+// // Retiro 140 unidades
+// bankAccount.Retirar(140);
+// System.Console.WriteLine(bankAccount.GetBalance());
 
-// Intento retirar 20 unidades (no deberia dejarme porque no hay saldo)
-bankAccount.Retirar(20);
-System.Console.WriteLine(bankAccount.GetBalance());
+// // Intento retirar 20 unidades (no deberia dejarme porque no hay saldo)
+// bankAccount.Retirar(20);
+// System.Console.WriteLine(bankAccount.GetBalance());
 
 
 // Abstraccion
@@ -40,3 +40,17 @@ System.Console.WriteLine(bankAccount.GetBalance());
 
 // ServicioEmail servicioEmail = new ServicioEmail();
 // ServicioEmail.EnviarMail(); // Guardando todo el proceso interno dentro de EnviarEmail()
+
+// Herencia
+
+using Test.src.PrincipiosPOO.Herencia;
+
+var auto = new Auto();
+
+// Compartido
+auto.Marca = "Ford";
+auto.Arrancar();
+auto.Apagar();
+
+// Unico
+auto.NumeroDePuertas = 4;

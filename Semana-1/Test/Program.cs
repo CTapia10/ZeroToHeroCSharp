@@ -57,26 +57,34 @@ using Test.src.PrincipiosPOO.Herencia;
 // auto.NumeroDePuertas = 4;
 
 
-//*** Polymorfismo ***//
-// El polymorfismo es la habilidad que tiene un objeto para tener varias formas
-using Test.src.PrincipiosPOO.Polymorfismo;
-//List<object> vehiculos = [];
-List<Vehiculo> vehiculos = [];
-vehiculos.Add(new Auto { Marca = "Ford", Modelo = "Modelo1", Anio = 2025, NumeroDePuertas = 4 });
-vehiculos.Add(new Motocicleta { Marca = "Motito", Modelo = "ModeloGod", Anio = 2025 });
+// //*** Polymorfismo ***//
+// // El polymorfismo es la habilidad que tiene un objeto para tener varias formas
+// using Test.src.PrincipiosPOO.Polymorfismo;
+// //List<object> vehiculos = [];
+// List<Vehiculo> vehiculos = [];
+// vehiculos.Add(new Auto { Marca = "Ford", Modelo = "Modelo1", Anio = 2025, NumeroDePuertas = 4 });
+// vehiculos.Add(new Motocicleta { Marca = "Motito", Modelo = "ModeloGod", Anio = 2025 });
 
-// Inspeccion de vehiculo
-foreach (var vehiculo in vehiculos)
-{
-    // if (vehiculo is Auto)
-    // {
-    //     var auto = (Auto)vehiculo;
-    //     auto.Arrancar();
-    // }
-    // else if (vehiculo is Motocicleta)
-    // {
-    //     var motocicleta = (Motocicleta)vehiculo;
-    //     motocicleta.Arrancar();
-    // }
-    vehiculo.Arrancar();
-}
+// // Inspeccion de vehiculo
+// foreach (var vehiculo in vehiculos)
+// {
+//     // if (vehiculo is Auto)
+//     // {
+//     //     var auto = (Auto)vehiculo;
+//     //     auto.Arrancar();
+//     // }
+//     // else if (vehiculo is Motocicleta)
+//     // {
+//     //     var motocicleta = (Motocicleta)vehiculo;
+//     //     motocicleta.Arrancar();
+//     // }
+//     vehiculo.Arrancar();
+// }
+
+
+//*** Coupling ***//
+
+// El nivel de dependencia entre diferentes clases (Si modifico una clase ver que no rompa otra que esta heredando sus propiedades)
+using Test.src.PrincipiosPOO.Coupling;
+var orden = new Orden();
+orden.ColocarOrden();

@@ -142,3 +142,6 @@ using Test.src.PrincipiosPOO.Herencia;
 
 // Single Responsibility Principle (SRP)
 // Una clase tiene que tener solo una razon para cambiar, esto significa que tiene que tener solo una responsabilidad o proposito
+
+// Open/Closed Principle (OCP)
+// Entidades de Software (Clases,modulos,funciones etc.) Deben estar abiertas a extensiones pero cerradas a modificaciones

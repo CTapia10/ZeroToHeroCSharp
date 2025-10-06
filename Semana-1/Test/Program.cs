@@ -1,4 +1,4 @@
-﻿//***/ Encapsulation
+﻿//***/ Encapsulation:
 using Test.src.PrincipiosPOO.Encapsulation;
 using Test.src.PrincipiosPOO.Herencia;
 
@@ -25,7 +25,7 @@ using Test.src.PrincipiosPOO.Herencia;
 // System.Console.WriteLine(bankAccount.GetBalance());
 
 
-//***Abstraccion***///
+//*** Abstraccion:
 // Reduce la complejidad escondiendo detalles innecesarios para el usuario
 
 // Por ejemplo pasar de esto:
@@ -43,7 +43,7 @@ using Test.src.PrincipiosPOO.Herencia;
 // ServicioEmail servicioEmail = new ServicioEmail();
 // ServicioEmail.EnviarMail(); // Guardando todo el proceso interno dentro de EnviarEmail()
 
-//*** Herencia ***//
+//*** Herencia:  ***//
 // using Test.src.PrincipiosPOO.Herencia;
 
 // var auto = new Auto();
@@ -57,7 +57,7 @@ using Test.src.PrincipiosPOO.Herencia;
 // auto.NumeroDePuertas = 4;
 
 
-// //*** Polymorfismo ***//
+// //*** Polymorfismo: ***//
 // // El polymorfismo es la habilidad que tiene un objeto para tener varias formas
 // using Test.src.PrincipiosPOO.Polymorfismo;
 // //List<object> vehiculos = [];
@@ -82,7 +82,7 @@ using Test.src.PrincipiosPOO.Herencia;
 // }
 
 
-//*** Coupling ***//
+//*** Coupling: ***//
 
 // // El nivel de dependencia entre diferentes clases (Si modifico una clase ver que no rompa otra)
 // using Test.src.PrincipiosPOO.Coupling;
@@ -136,3 +136,9 @@ using Test.src.PrincipiosPOO.Herencia;
 // Para mitigar el Problema de la Clase Base Frágil, los desarrolladores de software pueden usar principios de diseño como el Principio Abierto/Cerrado (OCP)
 // y el Principio de Inversión de Dependencias (DIP), así como patrones de diseño como Composición sobre Herencia.
 // Estos enfoques promueven un acoplamiento débil, encapsulación y diseño modular, reduciendo el impacto de los cambios en las clases base.
+
+
+//*** Principios SOLID: ***//
+
+// Single Responsibility Principle (SRP)
+// Una clase tiene que tener solo una razon para cambiar, esto significa que tiene que tener solo una responsabilidad o proposito

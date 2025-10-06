@@ -84,7 +84,9 @@ using Test.src.PrincipiosPOO.Herencia;
 
 //*** Coupling ***//
 
-// El nivel de dependencia entre diferentes clases (Si modifico una clase ver que no rompa otra que esta heredando sus propiedades)
+// El nivel de dependencia entre diferentes clases (Si modifico una clase ver que no rompa otra)
 using Test.src.PrincipiosPOO.Coupling;
-var orden = new Orden();
+var orden = new Orden(new EnviadorMail());
+var ordensms = new Orden(new EnviadorSMS());
 orden.ColocarOrden();
+ordensms.ColocarOrden();

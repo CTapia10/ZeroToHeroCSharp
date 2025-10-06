@@ -1,12 +1,13 @@
+
+
 namespace Test.src.PrincipiosPOO.Coupling
 {
-    public class EnviadorMail
+    public class EnviadorMail : IServicioNotificacion
     {
-        public void EnviarMail(string mensaje)
+        public void EnviarNotificacion(string mensaje)
         {
             // Logica de enviar mail
-            Console.WriteLine("Enviando mail:" + mensaje);
+            Console.WriteLine("Enviando mail: " + mensaje);
         }
-
     }
 }

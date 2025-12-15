@@ -145,3 +145,16 @@ using Test.src.PrincipiosPOO.Herencia;
 
 // Open/Closed Principle (OCP)
 // Entidades de Software (Clases,modulos,funciones etc.) Deben estar abiertas a extensiones pero cerradas a modificaciones
+
+// Liskov Sustitution Principle (LSP):
+
+// "Objetos de una superclase deberian poderse replicar con objetos de su subclase sin afectar la funcionalidad del programa."
+using Test.src.SOLID.L;
+// var rect = new Square{SideLength = 5};
+// System.Console.WriteLine("Expected area = 10 * 5 = 50");
+// System.Console.WriteLine("Calculated area = " + rect.Area);
+Shape rectangle = new Rectangle{Width = 5, Height = 4 };
+System.Console.WriteLine("Rectangle area = " + rectangle.Area);
+
+Shape square = new Square{SideLength=5};
+System.Console.WriteLine("Square area = " + square.Area);

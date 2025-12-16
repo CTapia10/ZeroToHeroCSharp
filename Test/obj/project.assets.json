@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Crist\\OneDrive\\Desktop\\UTN TUP\\Repositorios\\ZeroToHeroCSharp\\Semana-1\\Test\\Test.csproj",
+      "projectUniqueName": "C:\\Users\\Crist\\OneDrive\\Desktop\\UTN TUP\\Repositorios\\ZeroToHeroCSharp\\Test\\Test.csproj",
       "projectName": "Test",
-      "projectPath": "C:\\Users\\Crist\\OneDrive\\Desktop\\UTN TUP\\Repositorios\\ZeroToHeroCSharp\\Semana-1\\Test\\Test.csproj",
+      "projectPath": "C:\\Users\\Crist\\OneDrive\\Desktop\\UTN TUP\\Repositorios\\ZeroToHeroCSharp\\Test\\Test.csproj",
       "packagesPath": "C:\\Users\\Crist\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Crist\\OneDrive\\Desktop\\UTN TUP\\Repositorios\\ZeroToHeroCSharp\\Semana-1\\Test\\obj\\",
+      "outputPath": "C:\\Users\\Crist\\OneDrive\\Desktop\\UTN TUP\\Repositorios\\ZeroToHeroCSharp\\Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Crist\\AppData\\Roaming\\NuGet\\NuGet.Config",

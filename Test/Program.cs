@@ -1,4 +1,5 @@
 ﻿//***/ Encapsulation:
+using Test.src.DesignPatterns.Behavioral.Memento;
 using Test.src.PrincipiosPOO.Encapsulation;
 using Test.src.PrincipiosPOO.Herencia;
 
@@ -149,12 +150,41 @@ using Test.src.PrincipiosPOO.Herencia;
 // Liskov Sustitution Principle (LSP):
 
 // "Objetos de una superclase deberian poderse replicar con objetos de su subclase sin afectar la funcionalidad del programa."
-using Test.src.SOLID.L;
-// var rect = new Square{SideLength = 5};
-// System.Console.WriteLine("Expected area = 10 * 5 = 50");
-// System.Console.WriteLine("Calculated area = " + rect.Area);
-Shape rectangle = new Rectangle{Width = 5, Height = 4 };
-System.Console.WriteLine("Rectangle area = " + rectangle.Area);
+// using Test.src.SOLID.L;
+// // var rect = new Square{SideLength = 5};
+// // System.Console.WriteLine("Expected area = 10 * 5 = 50");
+// // System.Console.WriteLine("Calculated area = " + rect.Area);
+// Shape rectangle = new Rectangle{Width = 5, Height = 4 };
+// System.Console.WriteLine("Rectangle area = " + rectangle.Area);
 
-Shape square = new Square{SideLength=5};
-System.Console.WriteLine("Square area = " + square.Area);
+// Shape square = new Square{SideLength=5};
+// System.Console.WriteLine("Square area = " + square.Area);
+
+
+// Interface Segregation Principle ISP
+// "Clients should not be forced to depend on interfaces they do not use."
+
+
+// Dependency Inversion Principle (DIP)
+// High level modules should not depend on low level modules. 
+// Both should depend on abstractions
+
+
+
+var editor = new Editor();
+var history = new History(editor);
+history.Backup();
+editor.Title = "Test";
+editor.Content = "Hola mi nombre es lixttor";
+history.Backup();
+editor.Title = "La vida del dev: my memento";
+
+System.Console.WriteLine("Title: " + editor.Title);
+System.Console.WriteLine("Content: " + editor.Content);
+
+history.Undo();
+
+System.Console.WriteLine("Title: " + editor.Title);
+System.Console.WriteLine("Content: " + editor.Content);
+
+history.ShowHistory();
